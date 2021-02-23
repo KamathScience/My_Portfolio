@@ -1,0 +1,42 @@
+// menu button
+
+.menu-btn {
+  position: absolute; // over the corner
+  z-index: 3; // always on top
+  right: 35px;
+  top: 35px;
+  cursor: pointer; // when hovered
+  @include easeOut;
+
+  //line styling
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeOut;
+  }
+
+  // Rotate into X with menu line
+  &.close {
+    transform: rotate(180deg);
+    .btn-line {
+      //Line 01 - Rotate
+      &:nth-child(1) {
+        // css transform properties from mozilla site
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      //Line 02 - Hide
+      &:nth-child(2) {
+        // css transform properties from mozilla site
+        opacity: 0;
+      }
+      //Line 03 - Rotate
+      &:nth-child(3) {
+        // css transform properties from mozilla site
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
