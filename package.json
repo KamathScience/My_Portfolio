@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "responsive portfolio website",
   "main": "index.js",
-  "homepage": "https://KamathScience.github.io/my_portfolio",
+  "homepage": "https://KamathScience.github.io/My_Portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy":"gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,9 @@
   "bugs": {
     "url": "https://github.com/KamathScience/My_Portfolio/issues"
   },
-
   "dependencies": {
     "gh-pages": "^3.1.0",
+    "i": "^0.3.6",
     "node-sass": "^5.0.0"
   }
 }
